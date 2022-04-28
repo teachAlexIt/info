@@ -1,8 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat+Alternates:wght@900&display=swap');
-/* *{
+*{
   transition: 0.4s;
-} */
+}
 html{
   scroll-behavior: smooth;
 }
