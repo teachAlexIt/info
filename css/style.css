@@ -594,7 +594,6 @@ h1{
 footer{
   padding: 16px;
   background: linear-gradient(104.04deg, #1d79a3 0%, #5D28B5 100%);
-transform: matrix(1, 0, 0, -1, 0, 0);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 120% 120%;
