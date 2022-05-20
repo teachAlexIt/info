@@ -1,0 +1,284 @@
+@media (max-width:1454px){
+  body{
+    font-size: 0.6vw;
+  }
+}
+@media (max-width:1054px){
+  body{
+    font-size: 1vw;
+  }
+  /* .header__foto{
+    transform: scale(120%) translateX(-20%);
+  } */
+}
+@media (max-width:768px){
+  body{
+    font-size: 1.5vw;
+  }
+  .nav__links{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    min-height: 560px;
+    overflow-y: scroll;
+    top: 0;
+    right: -100vw;
+    background-color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 15vh;
+    padding-left: 20vw;
+    z-index: -1;
+  }
+  .nav__links_active{
+    right: 0;
+  }
+  .nav__links a{
+    font-size: 3.6em;
+    font-weight: 500;
+    position: relative;
+    right: -100vw;
+    color: #257ED0;
+    border-bottom: 1px solid #257ED0;
+  }
+  .nav__links a i{
+    display: inline-block;
+    margin-right: 8px;
+  }
+  .nav__links a:nth-child(1){
+    transition: all 0.5s;
+  }
+  .nav__links a:nth-child(2){
+    transition: all 0.6s;
+  }
+  .nav__links a:nth-child(3){
+    transition: all 0.7s;
+  }
+  .nav__links a:nth-child(4){
+    transition: all 0.8s;
+  }
+  .nav__links a:nth-child(5){
+    transition: all 0.9s;
+  }
+  .nav__links_active a{
+    right: 0;
+  }
+  .nav__contact a, .footer__contact a{
+    font-size: 4em;
+  }
+  .hamburger{
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: transparent;
+    position: relative;
+  }
+  .hamburger span{
+    width: 40px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    background-color: #257ED0;
+    left: 0;
+  }
+  .hamburger span:nth-child(1){
+    top: 0;
+    transition-property: transform, top;
+    transition-delay: 0s, 0.2s;
+    transition-duration: 0.2s, 0.2s;
+  }
+  .hamburger span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .hamburger span:nth-child(3){
+    bottom: 0;
+    transition-property: transform ,bottom;
+    transition-delay: 0s, 0.2s;
+    transition-duration: 0.2s, 0.2s;
+  }
+  .hamburger_active span:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    transition-property: top, transform;
+    transition-delay: 0s, 0.2s;
+    transition-duration: 0.2s, 0.2s;
+  }
+  .hamburger_active span:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger_active span:nth-child(3){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-225deg);
+    transition-property: bottom, transform;
+    transition-delay: 0s, 0.2s;
+    transition-duration: 0.2s, 0.2s;
+  }
+  header{
+    padding: 5vh 0 10vh;
+  }
+  .header__elements{
+    flex-direction: column-reverse;
+  }
+  .header__info{
+    max-width: none;
+    width: 100%;
+    text-align: center;
+  }
+  .header__foto::after, .header__foto::before{
+    animation: headerFoto 4s linear infinite ;
+  }
+  @keyframes headerFoto {
+    0%{
+      transform: translateY(0) scale(1);
+    }
+    25%{
+      transform: translateY(5%) scale(0.95);
+    }
+    50%{
+      transform: translateY(0) scale(1);
+    }
+    75%{
+      transform: translateY(-5%) scale(1.05);
+    }
+    100%{
+      transform: translateY(0) scale(1);
+    }
+  }
+  .header__info p, .header__info ul, .about-mi__info p, .courses__item p, .models__item p, .method__item p{
+    font-size: 1.8em;
+  }
+  .benefit__item p{
+    font-size: 1.8em;
+  }
+  .header__info hr{
+    width: 80%;
+    margin: 0 auto 1.5vh;
+  }
+  .header__foto{
+    width: 50%;
+    max-width: 50%;
+    transform: scale(1) translate(0);
+    margin-bottom: 32px;
+  }
+  .about-mi__elements{
+    flex-direction: column-reverse;
+    gap: 5vh;
+  }
+  .about-mi__elements img{
+    width: 50%;
+  }
+  .about-mi__info p{
+    text-align: center;
+  }
+  .courses__item h3, .courses__item button {
+    font-size: 2.4em;
+    width: 100%;
+  }
+  .courses__item button{
+    width: 90%;
+  }
+  .method__item h3{
+    font-size: 2.2em;
+  }
+  .benefit__item h3{
+    font-size: 2.2em;
+  }
+  .courses__elements, .method__elements{
+    gap: 20px;
+  }
+  .courses__item{
+    width: 40%;
+    max-width: 360px;
+  }
+  .method__item{
+    width: 90%;
+  }
+  .contact{
+    background-size: 120% 40%;
+  }
+  .footer__contact .footer__mail{
+    font-size: 2em;
+  }
+  .boby_darck .nav__links{
+    background-color: rgb(37, 37, 37);
+  }
+  
+}
+@media (max-width:660px){
+  .courses__item, .method__item{
+    width: 100%;
+  }
+}
+@media (max-width:425px){
+  .nav__links a{
+    font-size: 5.6em;
+    font-weight: bold;
+  }
+  .nav__contact a, .footer__contact a{
+    font-size: 5.6em;
+  }
+  .header__info p, .header__info ul, .about-mi__info p, .courses__item p, .models__item p, .method__item p, .benefit__item p, .benefit h4{
+    font-size: 3.2em;
+  }
+  .header__foto, .about-mi__elements img{
+    width: 90%;
+    max-width: 90%;
+  }
+  h2{
+    font-size: 5.6em;
+  }
+  .method__item{
+    min-width: 100%;
+  }
+  
+  .header__info a,.courses__item h3, .courses__item button, .models__item h3, .method__item h3, .contact h3, .benefit__item h3, .contact form button{
+    font-size: 4.4em;
+  }
+  .benefit__item .benefit__icon{
+    font-size: 10em;
+    line-height: 100%;
+  }
+  .method__item img{
+    width: 24%;
+  }
+  .benefit__item{
+    max-width: none;
+    max-height: none;
+    width: 90vw;
+    height: 90vw;
+    padding: 32px;
+  } 
+  .benefit h4{
+    width: 100%;
+    line-height: 140%;
+  }
+  .input-box input, .input-box textarea, .input-box span{
+    font-size: 3.2em;
+  }
+  .contact form p{
+    font-size: 2.8em;
+  }
+  .footer__elements{
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer__mail{
+    font-size: 2.6em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body, .courses__item, .method__item, .benefit__item, .input-box input, .input-box textarea, .input-box span, nav, .nav__links, .nav__links a, .text-privacy, .models__item, .submit-wrapper{
+    background-color: #2e2e2e;
+    color: #f5f5f5;
+  }
+  header{
+    background-image: url(../img/star.svg), url(../img/header-bg__darck.svg);
+  }
+  @media (max-width: 768px) {
+    .nav__links a{
+      color: #257ED0;
+    }
+  }
+}
