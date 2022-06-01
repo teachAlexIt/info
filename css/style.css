@@ -612,6 +612,9 @@ footer{
   font-size: 2.4em;
   color: #FFFFFF;
 }
+.whats-app_fixid{
+  display: none;
+}
 /* wrapper */
 .wrapper{
   position: fixed;
